@@ -22,6 +22,15 @@ body,
   align-items: center;
 }
 
-.piano {
+.links {
+  font-size: 32px;
   margin: 16px;
+}
+
+.inputs {
+  margin: 8px;
+}
+
+.piano {
+  margin: 8px;
 }

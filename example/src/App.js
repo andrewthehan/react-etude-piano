@@ -39,9 +39,22 @@ function App() {
     return piano;
   }
 
+  function renderLinks() {
+    return (
+      <a
+        href="https://github.com/andrewthehan/react-etude-piano"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="links"
+      >
+        react-etude-piano on GitHub
+      </a>
+    );
+  }
+
   function renderInputs() {
     return (
-      <span>
+      <span className="inputs">
         <label htmlFor="show-labels-input">Show labels</label>
         <input
           name="show-labels-input"
@@ -68,6 +81,7 @@ function App() {
   return (
     <div className="container">
       <Suspense fallback={<div>Loading...</div>}>
+        {renderLinks()}
         {renderInputs()}
         {renderPiano()}
       </Suspense>
