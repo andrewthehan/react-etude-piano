@@ -1,0 +1,27 @@
+* {
+  /* outline: 1px solid red; */
+}
+
+head,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.piano {
+  margin: 16px;
+}
