@@ -1,0 +1,40 @@
+{
+  "name": "react-etude-piano",
+  "version": "0.1.2",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "npx babel src -d build && cp src/*.css build/",
+    "clean": "rm -r ./build"
+  },
+  "author": "Andrew Han",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewthehan/react-etude-piano.git"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10"
+  },
+  "peerDependencies": {
+    "etude": "^3.0.0-0",
+    "react": "^17.0.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "useBuiltIns": "usage",
+          "corejs": 3
+        }
+      ],
+      "@babel/react"
+    ]
+  }
+}
