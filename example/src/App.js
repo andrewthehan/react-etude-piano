@@ -32,7 +32,7 @@ function App() {
   }, [piano]);
 
   async function getPiano() {
-    const piano = new TonePiano({ velocities: 5 });
+    const piano = new TonePiano({ velocities: 4 });
     piano.toDestination();
     await piano.load();
 
