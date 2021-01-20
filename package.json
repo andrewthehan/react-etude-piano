@@ -1,11 +1,11 @@
 {
   "name": "react-etude-piano",
   "version": "0.1.2",
-  "description": "",
+  "description": "Interactive piano for react leveraging etude.",
   "main": "build/index.js",
   "scripts": {
-    "build": "npx babel src -d build && cp src/*.css build/",
-    "clean": "rm -r ./build"
+    "prebuild": "rm -r build/",
+    "build": "npx babel src -d build && cp src/*.css build/"
   },
   "author": "Andrew Han",
   "license": "MIT",
